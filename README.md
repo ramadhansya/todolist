@@ -14,4 +14,4 @@ This project is todo list website using reactJS. In this website you can create,
 ```npm run dev```
 
 # Example website
-![example website](../todolist_react/public/exampleUI.png)
+![example website](https://github.com/mintrk/TodoList_React/blob/main/public/exampleUI.png)
