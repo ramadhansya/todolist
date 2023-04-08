@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;700&display=swap');
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+
+  --bg-color: #fff9f1;
+  --bg-todo-color: #f3ece5;
+  --red-color: #e06556;
+  --orange-color: #f07b37;
+  --yellow-color: #f3ba1d;
+  --green-color: #389446;
+  --blue-color: #388cb8;
+  --black-color: #070608;
+  --shadow: 10px 12px 0px #424242;
+}
+
+*{
+  font-family: 'Prompt', sans-serif;
+  box-sizing: border-box;
+}
+
+body{
+  color: var(--black-color);
+  background-image: radial-gradient(rgba(190, 190, 190, 0.87) 2px, transparent 2px);
+  background-size: 23px 23px;
+  background-color: #f3ece5;
+}
+
+.heading{
+  margin-bottom: 0;
+  font-size: 3em;
+}
+
+ul, li{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  min-height: 100vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  padding: 10px 40px;
+  background-color: var(--bg-color);
+  border-radius: 5px;
+  box-shadow: var(--shadow);
+  
+}
+
+.inputBox{
+  position: relative;
+  display: flex;
+  align-content: stretch;
+  margin-bottom: 20px;
+}
+
+.inputBox input{
+  /* width: 90%; */
+  padding: 8px;
+  border: 1px solid var(--blue-color);
+  background-color: var(--bg-color);
+  border-radius: 4px;
+  outline: none;
+  color: var(--blue-color);
+  font-size: 1em;
+  flex: 1 0 auto;
+}
+
+.inputBox .btn{
+  margin-left: 10px;
+  padding: 0 20px;
+  cursor: pointer;
+  outline: 0;
+  display: inline-block;
+  text-align: center;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  color: var(--green-color);
+  border-color: var(--green-color);
+}
+
+.inputBox .btn:hover {
+  color: #fff;
+  background-color: var(--green-color);
+  border-color: var(--green-color);
+}
+
+.inputBox .update{
+  color: var(--yellow-color);
+  border-color: var(--yellow-color);
+}
+
+.inputBox .update:hover {
+  color: #fff;
+  background-color: var(--yellow-color);
+  border-color: var(--yellow-color);
+}
+
+.inputBox .cancel{
+  color: var(--orange-color);
+  border-color: var(--orange-color);
+}
+
+.inputBox .cancel:hover {
+  color: #fff;
+  background-color: var(--orange-color);
+  border-color: var(--orange-color);
+}
+
+.inputBox span{
+  position: absolute;
+  left: 0;
+  padding: 8px;
+  pointer-events: none;
+  font-size: 1em;
+  color:  rgba(10, 10, 10, 0.3);
+  text-transform: uppercase;
+  transition: 0.4s;
+}
+
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span
+{
+  color: var(--blue-color);
+  transform: translateX(10px) translateY(-10px);
+  font-size: 0.8em;
+  padding: 0 10px;
+  background: var(--bg-color);
+}
+
+.todoBg{
+  background-color: var(--bg-todo-color);
+  position: relative;
+  text-align: left;
+  border-radius: 5px;
+  padding: 10px 140px 10px 15px;
+  margin-bottom: 20px;
+  /* overflow: auto; */
+  word-break: break-word;
+}
+
+.todoBg .completed .todoTitle{
+  text-decoration: line-through;
+  opacity: 0.2;
+}
+
+.todoBg:hover{
+  border: 1px solid var(--blue-color);
+}
+
+.iconsWrap{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
+  width: auto;
+  display: inline-block;
+}
+
+.iconsWrap span{
+  display: inline-block;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.iconsWrap .mark:hover{
+  color: var(--green-color);
+}
+.iconsWrap .delete:hover{
+  color: var(--red-color);
+}
+.iconsWrap .edit:hover{
+  color: var(--yellow-color)
+}
+
+.iconsWrapHeading span{
+  margin: 0 3px;
+}
+
+.iconsWrapHeading{
+  margin-bottom: 20px;
+}
+
+.cred{
+  color: var(--red-color)
+}
+.corange{
+  color: var(--orange-color)
+}
+.cyellow{
+  color: var(--yellow-color)
+}
+.cblue{
+  color: var(--blue-color)
+}
+.cgreen{
+  color: var(--green-color)
+}
