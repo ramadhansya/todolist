@@ -24,7 +24,7 @@
 
 body{
   color: var(--black-color);
-  background-image: url("public/bg_new.svg");
+  background-image: url("/bg_new.svg");
 }
 
 .heading{
