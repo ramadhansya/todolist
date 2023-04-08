@@ -1,6 +1,6 @@
 # TodoList_React
 
-This project is todo list website using reactJS. In this website you can create, update, delete your todo list. This will help you be more productive
+This project is todo list website using reactJS. In this website you can create, update, delete your todo list. This will help you be more productive. All data will be put on your localstorage. So, when you closing the site it will not lost.
 
 # Additional libraries
 * fontawesome for beautiful icon
@@ -14,4 +14,4 @@ This project is todo list website using reactJS. In this website you can create,
 ```npm run dev```
 
 # Example website
-![example website](https://github.com/mintrk/TodoList_React/blob/main/public/exampleUI.png)
+![example website](public/exampleUI.png)

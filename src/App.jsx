@@ -46,7 +46,6 @@ function App() {
 
   //Delete task
   function deleteTodo(id){
-
     let removeItem = todos.filter((todo)=>{
       if(todo.id === id){
         toast.info("You have deleted "+todo.title,{autoClose: 2000});
@@ -153,7 +152,7 @@ function App() {
       { todos.length ? '' : 'No Todo, Add new todo!' }
 
       <ul className='list-Container'>
-        { todos.map((todo, index)=>{
+        { todos.map((todo)=>{
           return(
             <div key={todo.id} className='todoBg'>
 
@@ -162,7 +161,6 @@ function App() {
               </li>
 
               <div className='iconsWrap'>
-
                 <span title='Completed / Uncompleted' onClick={()=>markTodo(todo.id)} className='mark'> 
                   <FontAwesomeIcon icon = {faSquareCheck}/>
                 </span>
@@ -175,6 +173,7 @@ function App() {
                   <FontAwesomeIcon icon = {faTrashCan}/>
                 </span>
               </div>
+
             </div>
           )
         })
@@ -182,7 +181,10 @@ function App() {
       </ul>
 
       <h2>{'completed '+ isCompleted + '/' + todos.length }</h2>
+
+      {/* for activity notification */}
       <ToastContainer/>
+
     </div>
   )
 }
