@@ -24,7 +24,7 @@
 
 body{
   color: var(--black-color);
-  background-image: url("https://github.com/mintrk/TodoList_React/blob/main/public/bgshape.svg");
+  background-image: url("public/bg_new.svg");
 }
 
 .heading{
