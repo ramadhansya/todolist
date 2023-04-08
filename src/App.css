@@ -24,9 +24,7 @@
 
 body{
   color: var(--black-color);
-  background-image: radial-gradient(rgba(190, 190, 190, 0.87) 2px, transparent 2px);
-  background-size: 23px 23px;
-  background-color: #f3ece5;
+  background-image: url("https://github.com/mintrk/TodoList_React/blob/main/public/bgshape.svg");
 }
 
 .heading{
@@ -141,6 +139,7 @@ ul, li{
   background-color: var(--bg-todo-color);
   position: relative;
   text-align: left;
+  border: 1px solid var(--bg-todo-color);
   border-radius: 5px;
   padding: 10px 140px 10px 15px;
   margin-bottom: 20px;
